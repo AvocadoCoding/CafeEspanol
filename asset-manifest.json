@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CafeEspanol/static/css/main.5a0ddfe7.css",
-    "main.js": "/CafeEspanol/static/js/main.81094d35.js",
+    "main.css": "/CafeEspanol/static/css/main.a6b20f2f.css",
+    "main.js": "/CafeEspanol/static/js/main.9a4ef8df.js",
     "static/js/453.ad6eb26e.chunk.js": "/CafeEspanol/static/js/453.ad6eb26e.chunk.js",
     "static/media/Header.JPG": "/CafeEspanol/static/media/Header.5799e8b010a9ed4ee53d.JPG",
     "index.html": "/CafeEspanol/index.html",
-    "main.5a0ddfe7.css.map": "/CafeEspanol/static/css/main.5a0ddfe7.css.map",
-    "main.81094d35.js.map": "/CafeEspanol/static/js/main.81094d35.js.map",
+    "main.a6b20f2f.css.map": "/CafeEspanol/static/css/main.a6b20f2f.css.map",
+    "main.9a4ef8df.js.map": "/CafeEspanol/static/js/main.9a4ef8df.js.map",
     "453.ad6eb26e.chunk.js.map": "/CafeEspanol/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a0ddfe7.css",
-    "static/js/main.81094d35.js"
+    "static/css/main.a6b20f2f.css",
+    "static/js/main.9a4ef8df.js"
   ]
 }
