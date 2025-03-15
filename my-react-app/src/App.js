@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
+import Navbar from './components/Navbar';
 import Takeaway from './pages/Takeaway';
 import Menu from './pages/Menu';
 import ContactUs from './pages/ContactUs';
@@ -12,6 +12,7 @@ function App() {
     <Router basename="/CafeEspanol">
       <div>
         <Header />
+        <Navbar />
         <Routes>
           <Route path="/menu" element={<Menu />} />
           <Route path="/takeaway" element={<Takeaway />} />

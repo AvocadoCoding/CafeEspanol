@@ -1,11 +1,9 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 
 
-function Home() {
+function Menu() {
   return (
     <div>
-      <Navbar />
       <div className="home-content" style={{ padding: '1rem', textAlign: 'center' }}>
         <h2>Upcoming Play</h2>
         <p>*Play synopsis*</p>
@@ -16,4 +14,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Menu;

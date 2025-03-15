@@ -6,10 +6,6 @@
     padding: 0.5rem 1rem;
   }
   
-  .navbar-logo img {
-    height: 50px; /* adjust as needed */
-  }
-  
   .navbar-links a {
     color: #fff;
     margin: 0 0.5rem;
