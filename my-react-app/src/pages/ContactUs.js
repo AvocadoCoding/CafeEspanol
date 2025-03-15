@@ -5,7 +5,7 @@ function ContactUs() {
     <div>
       <div className="page-content" style={{ padding: '1rem' }}>
         <h2>Contact Us</h2>
-        <p>Contact details and forms will go here.</p>
+        <p>Contact details</p>
       </div>
     </div>
   );
