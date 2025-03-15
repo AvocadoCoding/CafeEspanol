@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/CafeEspanol/static/css/main.d5475990.css",
-    "main.js": "/CafeEspanol/static/js/main.bcab118c.js",
+    "main.js": "/CafeEspanol/static/js/main.97ac051b.js",
     "static/js/453.ad6eb26e.chunk.js": "/CafeEspanol/static/js/453.ad6eb26e.chunk.js",
     "static/media/Logo.png": "/CafeEspanol/static/media/Logo.44b7bb53f85ef9997bc3.png",
     "static/media/Header.png": "/CafeEspanol/static/media/Header.3f9d83c8472818c6ac7f.png",
     "index.html": "/CafeEspanol/index.html",
     "main.d5475990.css.map": "/CafeEspanol/static/css/main.d5475990.css.map",
-    "main.bcab118c.js.map": "/CafeEspanol/static/js/main.bcab118c.js.map",
+    "main.97ac051b.js.map": "/CafeEspanol/static/js/main.97ac051b.js.map",
     "453.ad6eb26e.chunk.js.map": "/CafeEspanol/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5475990.css",
-    "static/js/main.bcab118c.js"
+    "static/js/main.97ac051b.js"
   ]
 }
