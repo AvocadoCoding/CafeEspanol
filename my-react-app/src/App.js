@@ -1,10 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
-import Bookings from './pages/Bookings';
-import Gallery from './pages/Gallery';
-import AboutUs from './pages/AboutUs';
+
+import Takeaway from './pages/Takeaway';
+import Menu from './pages/Menu';
 import ContactUs from './pages/ContactUs';
 import Header from './components/Header';
 
@@ -14,11 +13,9 @@ function App() {
       <div>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/bookings" element={<Bookings />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/takeaway" element={<Takeaway />} />
+          <Route path="/contactus" element={<ContactUs />} />
         </Routes>
       </div>
     </Router>
