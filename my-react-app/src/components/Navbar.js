@@ -6,9 +6,9 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-links">
-        <Link to="/menu">Menu</Link>
-        <Link to="/takeaway">Takeaway</Link>
-        <Link to="/contactus">Contact</Link>
+        <Link to="/menu">Menú</Link>
+        <Link to="/takeaway">Delivery</Link>
+        <Link to="/contactus">Contáctenos</Link>
       </div>
     </nav>
   );
