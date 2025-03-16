@@ -16,14 +16,14 @@ function Menu() {
         borderRadius: '15px', // rounded corners
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' // subtle shadow for depth
          }}>
-      <h2>Menú</h2>
+      <h1>Menú</h1>
         <p></p>
-        <p>Caldo de gallina</p>
-        <p>Pollo broaster</p>
-        <p>Salchi broaster</p>
-        <p>Salchipapa</p>
-        <p>Bebidas calientes</p>
-        <p>Gaseosas</p>
+        <h2>Caldo de gallina</h2>
+        <h2>Pollo broaster</h2>
+        <h2>Salchi broaster</h2>
+        <h2>Salchipapa</h2>
+        <h2>Bebidas calientes</h2>
+        <h2>Gaseosas</h2>
         {/* Add more home page content here */}
       </div>
     </div>
