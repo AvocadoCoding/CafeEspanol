@@ -11,8 +11,7 @@ function Menu() {
         textAlign: 'center', 
         maxWidth: '400px', 
         margin: '0 auto',
-        border: '5px solid', // width of the border
-        borderImage: 'linear-gradient(to right, #333, #ccc) 1', // gradient border
+        border: '5px solid #777', // Monotone grey border
         borderRadius: '15px', // rounded corners
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' // subtle shadow for depth
          }}>
