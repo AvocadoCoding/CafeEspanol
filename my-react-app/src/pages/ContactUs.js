@@ -2,7 +2,7 @@ import React from 'react';
 
 function ContactUs() {
   return (
-    <div>
+    <div style={{ backgroundColor: '#FFF9DB', minHeight: '100vh' }}>
       <div className="page-content" style={{ padding: '1rem' }}>
         <h2>Contáctenos</h2>
         <h3>Número de teléfono</h3>
