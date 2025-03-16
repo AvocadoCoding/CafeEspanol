@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.page-content h2 {
+  color: purple;
+  border: 2px solid white;
+  padding: 10px;
+  display: inline-block;
+}

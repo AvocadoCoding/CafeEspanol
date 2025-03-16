@@ -7,10 +7,15 @@
   }
   
   .navbar-links a {
-    color: #fff;
+    color: #FFF9DB;
     margin: 0 0.5rem;
     text-decoration: none;
   }
+
+  /* Add a hover effect */
+.navbar-links a:hover {
+  color: #f5c943;  /* A slightly different shade of yellow if you want a hover effect */
+}
   
   .navbar-links a:hover {
     text-decoration: underline;
