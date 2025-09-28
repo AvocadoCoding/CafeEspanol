@@ -41,6 +41,15 @@ jobs:
       - name: Show build output (sanity check)
         run: ls -la my-react-app/build || true
 
+      # 🔎 Debug: prove the secret is present (won't print the value)
+      - name: Check SWA token presence
+        run: |
+          if [ -z "${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}" ]; then
+            echo "SWA token secret is MISSING"; exit 1;
+          else
+            echo "SWA token secret is present";
+          fi
+
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -59,6 +68,8 @@ jobs:
       - uses: Azure/static-web-apps-deploy@v1
         with:
           action: close
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          app_location: "my-react-app"
 
 
 
