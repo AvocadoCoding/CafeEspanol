@@ -50,7 +50,7 @@ jobs:
           # Since we already built above, skip Oryx re-building:
           skip_app_build: true
           # optional, enables PR preview envs
-          repo_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GREEN_POND_03A37430F }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
