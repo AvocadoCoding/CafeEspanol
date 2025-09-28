@@ -18,7 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Show repo root (sanity check)
+      # Sanity check: see what's in the repo root
+      - name: Show repo root
         run: ls -la
 
       - uses: actions/setup-node@v4
@@ -26,7 +27,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        working-directory: CafeEspanol/my-react-app
+        working-directory: my-react-app
         run: |
           if [ -f package-lock.json ]; then
             npm ci
@@ -35,19 +36,19 @@ jobs:
           fi
 
       - name: Build React app
-        working-directory: CafeEspanol/my-react-app
+        working-directory: my-react-app
         run: npm run build
 
       - name: Show build output (sanity check)
-        run: ls -la CafeEspanol/my-react-app/build || true
+        run: ls -la my-react-app/build || true
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GREEN_POND_03A37430F }}
           action: upload
-          app_location: "CafeEspanol/my-react-app"
-          output_location: "build"
+          app_location: "my-react-app"   # ← path relative to repo root
+          output_location: "build"        # CRA output
           skip_app_build: true
           repo_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -59,6 +60,7 @@ jobs:
       - uses: Azure/static-web-apps-deploy@v1
         with:
           action: close
+
 
 
 
