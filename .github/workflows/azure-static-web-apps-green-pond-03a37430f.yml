@@ -22,8 +22,9 @@ jobs:
         with:
           node-version: '20'
 
-      # Use npm ci if a lockfile exists; otherwise fall back to npm install
       - name: Install dependencies
+      # run npm in the app folder that contains package.json
+        working-directory: CafeEspanol/my-react-app
         run: |
           if [ -f package-lock.json ]; then
             npm ci
@@ -32,21 +33,23 @@ jobs:
           fi
 
       - name: Build React app
+        working-directory: CafeEspanol/my-react-app
         run: npm run build
 
-      # Quick sanity check: list the build output so we know it exists
-      - name: Show build output
-        run: ls -la ./build || true
+      - name: Show build output (sanity check)
+        run: ls -la CafeEspanol/my-react-app/build || true
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
-          # This must match your repo secret name exactly
+          # This MUST match your repo secret name exactly
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GREEN_POND_03A37430F }}
           action: upload
-          app_location: "/"
+          # Path to your app relative to repo root
+          app_location: "CafeEspanol/my-react-app"
+          # CRA outputs to "build"
           output_location: "build"
-          # Optional but helpful for previews with PRs
+          # optional, enables PR preview envs
           repo_token: ${{ secrets.GITHUB_TOKEN }}
 
   close_pull_request_job:
