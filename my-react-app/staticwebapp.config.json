@@ -4,11 +4,12 @@
     "exclude": [
       "/favicon.ico",
       "/assets/*",
-      "/*.{png,jpg,jpeg,gif,svg,css,js,ico,webp,woff,woff2,ttf,map}"
+      "/*.{png,jpg,jpeg,gif,svg,webp,css,js,ico,txt,xml,webmanifest,woff,woff2,ttf,map}"
     ]
   },
   "responseOverrides": {
     "404": { "rewrite": "/index.html" }
   }
 }
+
 
