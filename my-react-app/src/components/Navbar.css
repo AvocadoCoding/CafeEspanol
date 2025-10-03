@@ -1,15 +1,17 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 0.5rem 1rem;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  font-size: 18px;   /* 👈 everything inside navbar gets this size */
+}
   
   .navbar-links a {
     color: #FFF9DB;
     margin: 0 0.5rem;
     text-decoration: none;
+    font-size: 18px;   /* 👈 change this value to the size you want */
   }
 
   /* Add a hover effect */
