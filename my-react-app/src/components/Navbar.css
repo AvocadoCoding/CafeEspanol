@@ -4,21 +4,27 @@
   align-items: center;
   background-color: #333;
   padding: 0.5rem 1rem;
-  font-size: 20px;   /* 👈 everything inside navbar gets this size */
+  font-size: 18px;   /* ✅ mobile-first: slightly smaller, easier to fit */
 }
-  
-  .navbar-links a {
-    color: #FFF9DB;
-    margin: 0 0.5rem;
-    text-decoration: none;
-    font-size: 20px;   /* 👈 change this value to the size you want */
-  }
 
-  /* Add a hover effect */
-.navbar-links a:hover {
-  color: #f5c943;  /* A slightly different shade of yellow if you want a hover effect */
+.navbar-links a {
+  color: #FFF9DB;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-size: inherit;        /* inherit from .navbar */
+  padding: 0.5rem 0.75rem;   /* ✅ bigger tap area for mobile (≈44px tall) */
+  display: inline-block;     /* ensures padding applies around the link */
 }
-  
-  .navbar-links a:hover {
-    text-decoration: underline;
+
+/* Hover effect (desktop only really, but harmless on mobile) */
+.navbar-links a:hover {
+  color: #f5c943;
+  text-decoration: underline;
+}
+
+/* ✅ bump up font size for tablets & desktops */
+@media (min-width: 768px) {
+  .navbar {
+    font-size: 20px;
   }
+}
